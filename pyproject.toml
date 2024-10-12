@@ -5,9 +5,20 @@ description = ""
 authors = ["infocornouaille <90894019+infocornouaille@users.noreply.github.com>"]
 readme = "README.md"
 
-[tool.poetry.dependencies]
-python = "^3.12"
+[tool.poetry.scripts]
+mdcor = "mdcor.cli:main"
 
+[tool.poetry.dependencies]
+python = "^3.9"
+imagecor = "^0.1.0"
+watchdog = "^5.0.3"
+pypandoc = "^1.14"
+pyyaml = "^6.0.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+pytest = "^8.3.3"
 
 [build-system]
 requires = ["poetry-core"]
